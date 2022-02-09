@@ -3,22 +3,113 @@
 
 <head>
     <style>
-        p {
-            border: 2px solid red;
-            border-radius: 5px;
-            margin: 25px 50px 75px 100px;
+        h1 {
+            color: darkorange;
+            background-color: forestgreen;
+            text-decoration: underline;
         }
 
-        #head1{
-            margin: auto;
+        h1:nth-child(even) {
+            text-decoration: line-through;
+        }
+
+        h1:hover {
+            color: blue;
+            background-color: yellow;
+        }
+
+        h1:active {
+            color: rosybrown;
+            background-color: brown;
+        }
+
+        h2+h1 {
+            color: navy;
+        }
+
+        #head1 {
+            margin: 15px;
+            padding-top: 30px;
+            border: 10px solid chartreuse;
+            border-left: 5px groove coral;
+            border-right: 15px double cornflowerblue;
+        }
+
+        #head2 {
+            margin: 15px 25px;
+            padding: 30px;
+        }
+
+        #head3 {
+            margin: 15px 25px 35px;
+            padding: 50px 100px;
+        }
+
+        #head4 {
+            margin: 20px 40px 60px 80px;
+            padding: 10px 20px 30px 40px;
+        }
+
+        li{
+            background-color: blue;
+        }
+
+        ul>li{
+            text-decoration: line-through;
+        }
+
+        ol>li{
+            font-size: 75px;
         }
     </style>
 </head>
 
 <body>
-    <h1>This is a heading</h1>
-    <p>This is a paragraph</p>
-    <p id="head1">This is a paragraph</p>
+    <!-- h1*8#head$>lorem3 -->
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Sit, accusamus quibusdam?</h1>
+    <h1 id="head3">Atque, at recusandae?</h1>
+    <h1 id="head4">Quaerat, deleniti possimus.</h1>
+    <h1 id="head5">Saepe, quibusdam minus!</h1>
+    <h1 id="head6">Possimus, repudiandae quisquam.</h1>
+    <h1 id="head7">Voluptate, expedita quidem!</h1>
+    <h1 id="head8">Quas, officiis velit?</h1>
+
+    <br><br><br><br><br>
+
+    <!-- (h1>lorem3^h2>lorem3)*3 -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h1>Veniam, officiis dicta!</h1>
+    <h2>Expedita, dolor. Voluptatem.</h2>
+    <h1>Dolore, quis veniam!</h1>
+    <h2>Repudiandae, accusamus incidunt.</h2>
+
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Vel, a!</li>
+        <li>Distinctio, molestias?</li>
+        <li>Laboriosam, veritatis!</li>
+        <li>Soluta, quod?</li>
+        <li>Officiis, fugiat.</li>
+        <li>Reiciendis, laborum.</li>
+        <li>Vitae, dignissimos?</li>
+        <li>Minima, minus.</li>
+        <li>Deleniti, totam?</li>
+    </ul>
+
+    <ol>
+        <li>Lorem, ipsum.</li>
+        <li>Aut, sapiente?</li>
+        <li>Laborum, ab.</li>
+        <li>Expedita, voluptate.</li>
+        <li>Quo, doloremque.</li>
+        <li>Provident, eaque.</li>
+        <li>Numquam, officiis.</li>
+        <li>Voluptatibus, expedita.</li>
+        <li>Porro, reiciendis?</li>
+        <li>Perspiciatis, illum.</li>
+    </ol>
 </body>
 
 </html>
