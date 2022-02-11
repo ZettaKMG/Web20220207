@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .top,
         .nav {
@@ -25,6 +28,27 @@
         .nav-menu-item {
             padding: 10px 20px;
         }
+
+        .main-container {
+            display: flex;
+            height: 1200px;
+        }
+
+        .main-left,
+        .main-right {
+            width: 200px;
+            background-color: grey;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -32,11 +56,11 @@
     <!-- .top>.left>.top-menu-item*5{LINK}^.right>.top-menu-item*3{LINK} -->
     <div class="top">
         <div class="top-left">
-            <div class="top-menu-item">LINK</div>
-            <div class="top-menu-item">LINK</div>
-            <div class="top-menu-item">LINK</div>
-            <div class="top-menu-item">LINK</div>
-            <div class="top-menu-item">LINK</div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-arrow-down"></i></div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-arrow-down"></i></div>
+            <div class="top-menu-item">LINK <i class="fa-solid fa-arrow-down"></i></div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-arrow-down"></i></div>
+            <div class="top-menu-item">LINK<i class="fa-solid fa-arrow-down"></i></div>
         </div>
         <div class="top-right">
             <div class="top-menu-item">LINK</div>
@@ -72,23 +96,6 @@
         </div>
     </div>
 
-
-    <style>
-        .main-container {
-            display: flex;
-            height: 1200px;
-        }
-
-        .main-left,
-        .main-right {
-            width: 200px;
-            background-color: grey;
-        }
-
-        .main-content {
-            flex: 1;
-        }
-    </style>
     <!-- .main-container>.main-left+.main-content+.main-right -->
     <div class="main-container">
         <div class="main-left">
@@ -129,14 +136,6 @@
             <h1>
                 Lorem, ipsum dolor.
             </h1>
-
-
-            <style>
-                .button-container {
-                    display: flex;
-                    justify-content: space-between;
-                }
-            </style>
 
             <div class="button-container">
                 <button>home</button>
