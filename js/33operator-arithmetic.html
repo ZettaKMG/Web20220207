@@ -22,6 +22,7 @@
     <button id="button2"><i class="fa-solid fa-xmark"></i></button>
     <button id="button3"><i class="fa-solid fa-divide"></i></button>
     <button id="button4"><i class="fa-solid fa-plus"></i></button>
+    <button id="button5">MOD(<i class="fa-solid fa-percent"></i>)</button>
     <p id="result"></p>
 
     <script>
@@ -52,6 +53,13 @@
             let num1 = document.getElementById("input1").value;
             let num2 = document.getElementById("input2").value;
             let num3 = Number(num1) + Number(num2);
+            document.getElementById("result").innerHTML = num3;
+        }
+
+        document.getElementById("button5").onclick = function () {
+            let num1 = document.getElementById("input1").value;
+            let num2 = document.getElementById("input2").value;
+            let num3 = num1 % num2;
             document.getElementById("result").innerHTML = num3;
         }
     </script>
