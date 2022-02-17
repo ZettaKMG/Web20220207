@@ -17,30 +17,48 @@
 <body>
 
     <script>
-        let afunc = function () {
-            let a = 3;
-            console.log(a);
+        
+        //return
+        // 1. 함수 종료
+        // 2. 키워드 오른쪽에 있는 값을 호출한 곳으로 반환(return)
+
+        let a = function () {
+            console.log(1);
+            console.log(2);
+            return;
+            console.log(3);
         }
 
-        let bfunc = function () {
-            let a = 5;
-            console.log(a);
+        a();
+        a();
+
+        let b = function () {
+            return 1;
         }
 
-        let cfunc = function (x) {
-            console.log(x);
+        let c = b();
+        let d = 9;
+
+        console.log(c);
+        console.log(d);
+
+        let e = function (x) {
+
+            return x * 2;
         }
 
-        let dfunc = function (x) {
-            console.log(x);
-        }
+        let f = e(100);
+        console.log(f);
 
-        afunc();
-        bfunc();
-        console.log(a);
+        let g = e(20);
+        console.log(g);
+
+        console.log(e(90));
+
+        let h = e(4) * 2;
+        console.log(h);
 
     </script>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
