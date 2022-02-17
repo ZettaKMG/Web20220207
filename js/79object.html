@@ -24,7 +24,7 @@
             amethod: function () {
                 console.log(a.aprop);
             }
-        };
+        }
 
         a.amethod();
 
@@ -40,10 +40,9 @@
             console.log(b.aprop);
         }
 
-        // console.log(b.amethod);
-
         b.amethod();
 
+        //
         let c = {
             aprop: "Trump"
         }
@@ -52,11 +51,21 @@
             aprop: "Mickey"
         }
 
+        // c.amethod = function () {
+        //    console.log(c.aprop);
+        //}
+        // d.amethod = function () {
+        //    console.log(d.aprop);
+        //}
+
         let e = function () {
             console.log(this.aprop);
         }
         c.amethod = e;
         d.amethod = e;
+
+        c.amethod();
+        d.amethod();
 
         // this : 함수를 소유한 객체
 
