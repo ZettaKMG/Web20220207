@@ -16,46 +16,35 @@
 
 <body>
     <script>
-        let arr1 = ["jin", "jimin", "rm", "v"];
-
+        let arr1 = [4, 7, 1, 2];
         for (let i = 0; i < arr1.length; i++) {
             console.log(arr1[i]);
         }
 
-        // for ... of
         for (let item of arr1) {
             console.log(item);
         }
 
-        let arr2 = [3, 7, 2, 1, 0, 99, 2];
-
-        // 코드 작성 : for of 사용해서 모든 값을 더해서 출력
-        let sum = 0;
-        for (let item of arr2) {
-            sum += item;
+        let str = "script";
+        for (let c of str) {
+            console.log(c);
         }
-        console.log(sum);
 
-        // arr1의 모든 문자열 연결해서 출력
-        // "jinjiminrmv"
-        let sum1 = "";
-        for (let item of arr1) {
-            sum1 += item;
+        // console.log(str[0]);
+        for (let i = 0; i < str.length; i++) {
+            console.log(str[i]);
         }
-        console.log(sum1);
 
-        let arr3 = [[6, 5, 1, 2], [0, 1, 2], [9, 8, 7, 2], [9, 3, 4]];
-        // arr3의 모든 값을 더해서 출력 (for of 사용)
-        sum2 = 0;
-        for (let s of arr3) {
-            for (let s2 of s) {
-                sum2 += s2;
-            }
+
+        // 문제 : "script"를 거꾸로 가진 string 변수 reverseStr 출력
+        // 코드 작성
+        let reverseStr = "";
+        for (let c of str) {
+            reverseStr = c + reverseStr;
         }
-        console.log(sum2);
 
+        console.log(reverseStr); // "tpircs"
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
