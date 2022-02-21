@@ -48,10 +48,29 @@
         let ele = document.querySelectorAll(".note");
         for (i = 0; i < ele.length; i++) {
             console.log(ele[i].innerHTML);
-        }         
+        }
+
+        for (let note of ele) {
+            console.log(note.innerHTML);
+        }
+
+        let paras = document.querySelectorAll("p");
+        for (i = 0; i < paras.length; i++) {
+            paras[i].onclick = function () {
+                console.log(this.innerHTML);
+            }
+        }
+
+        // 문제 : h1 요소를 클릭했을 때 콘텐츠가 출력되도록
+        // 코드작성
+        let h1s = document.querySelectorAll("h1");
+        for (let h1c of h1s) {
+            h1c.onclick = function () {
+                console.log(this.innerHTML);                
+            }
+        }
 
     </script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
