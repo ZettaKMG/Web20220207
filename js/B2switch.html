@@ -24,26 +24,28 @@
 
     <!-- h1#result1>i.fa-solid.fa-hand -->
     <h1 id="result1">
-        <i class="fa-solid fa-hand"></i>
+        <i class="fa-solid fa-hand-scissors"></i>
     </h1>
 
     <script>
-        document.querySelector("#select1").onchange = function () {
+        document.querySelector("#select1").onchange = function() {
             let val = this.value;
 
-            let iconElem = document.querySelector("#result1>i")
+            let iconElem = document.querySelector("#result1 > i");
+
             switch (val) {
-                case 0:
+                case "0":
                     iconElem.className = "fa-hand-scissors";
                     break;
-                case 1:
-                    iconElem.className = "fa-hand-back-fist";
+                case "1":
+                    iconElem.className = "fa-hand-back-fist"
                     break;
-                case 2:
+                case "2":
                     iconElem.className = "fa-hand";
                     break;
             }
-            iconElem.className = "fa-solid"
+            iconElem.className += " fa-solid";
+
         }
 
     </script>
