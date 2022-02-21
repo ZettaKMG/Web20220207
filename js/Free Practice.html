@@ -15,24 +15,30 @@
 </head>
 
 <body>
+    <input type="text" id="input1">단까지</input>
+    <button id="button1">구구단 출력</button>
+    <div id="result1"></div>
 
     <script>
-        let a=3;
-        let b=function(){
-            console.log(1);
-        }
+        document.getElementById("button1").onclick = function () {
+            let upto = document.getElementById("input1").value;
+            upto = Number(document.getElementById("input1").value);
+            let ggd="";
+            
+            for (let i = 2; i < 10; i++) {
+                if (i > upto) {
+                    break;
+                }
 
-        function c(){
-            console.log(2);
-        }
+                for (let j = 1; j < 10; j++) {
+                    ggd += i + "X" + j + "=" + (i * j);
+                    ggd += "<br>"
+                }
+            }
 
-        function d(x) {
-            console.log(d);
+            document.getElementById("result1").innerHTML = ggd;
         }
-
-        d("hello");
-        d("hi");
-        </script>
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
