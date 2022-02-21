@@ -17,39 +17,18 @@
 <body>
 
     <script>
-
-        console.log("이전 실행되는 코드");
-
-        let i = 0;
-        while (i < 3) {
-            console.log("반복할 코드들");
-            i++;
-        }
-        console.log("다음 실행되는 코드들");
-        console.log(i);
-
-        while (i < 10) {
-            console.log("반복할 코드들");
-            i++;
-        }
-
-        while (i < 20) {
-            console.log("다음 실행되는 코드들");
-            i = i + 2;
-        }
-
-        // exercise 1
-        i = 0;
-        while (i < 10) {
+        // 9 ~ 0 (역순) 출력되도록 while 사용해서 작성
+        i = 9;
+        while (i >= 0) {
             console.log(i);
-            i++;
+            i--;
         }
 
-        // exercise 2
-        i = 0;
-        while (i < 10) {
+        // 8, 6, 4, 2, 0 출력되도록 while 사용해서 작성
+        i = 8;
+        while (i >= 0) {
             console.log(i);
-            i = i + 2;
+            i -= 2;
         }
 
     </script>
