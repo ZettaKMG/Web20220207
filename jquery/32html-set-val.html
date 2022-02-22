@@ -17,32 +17,27 @@
     </style>
     <script>
         $(document).ready(function () {
-            $("#input1").keyup(function () {
-                console.log($("#input1").val());
-            });
-            $("#select1").change(function () {
-                console.log($("#select1").val());
-            });
-        });
+            $("#input1").val("hi java");
+            $("#select1").val("code3");
+        })
     </script>
 </head>
 
 <body>
-    <!-- input#input1+br+select#select1>option*3[value=value$]>lorem1 -->
+    <!-- input#input1+br+select#select1>option*3[value=code$]>lorem1 -->
     <input type="text" id="input1">
     <br>
     <select name="" id="select1">
-        <option value="value1">
+        <option value="code1">
             Lorem.
         </option>
-        <option value="value2">
-            At?
+        <option value="code2">
+            Eius.
         </option>
-        <option value="value3">
-            Vel.
+        <option value="code3">
+            Dolorem?
         </option>
     </select>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
