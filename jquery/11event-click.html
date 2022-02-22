@@ -23,33 +23,38 @@
         Lorem.
     </h1>
     <h1 id="head2">
-        Praesentium?
+        Ad!
     </h1>
     <h1 id="head3">
-        Sapiente!
+        Veritatis.
     </h1>
 
-    <!-- p#para$*3>lorem2 -->
-    <p id="para1">
-        Lorem, ipsum.
+    <!-- p*3>lorem -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima eum voluptates sequi obcaecati aliquid
+        quisquam fuga, repudiandae, tempore ratione nulla iste dolorem veritatis? Temporibus enim commodi magni
+        asperiores dolor!
     </p>
-    <p id="para2">
-        Numquam, tempora?
+    <p>
+        Ullam deleniti, quod facere impedit ab totam, iusto voluptatum quam eius vero expedita tempore dignissimos odit
+        accusamus tenetur magnam autem voluptatibus dicta asperiores. Velit eaque voluptates earum odio commodi
+        delectus?
     </p>
-    <p id="para3">
-        Cum, aut!
+    <p>
+        Quas ducimus, a placeat veniam ullam nesciunt quos enim assumenda. Dignissimos maxime nostrum, enim quos harum
+        recusandae saepe non voluptate ad. Impedit eius assumenda dolores exercitationem enim iusto voluptas ab.
     </p>
 
     <script>
         $("h1").click(function () {
-            console.log("click!!!!!");
+            // console.log(this);
+            $(this).hide();
         });
 
-        // p 요소 클릭되면 "클릭됨" 콘솔에 출력
-        // 코드 작성
+        // 클릭된 p 요소가 숨겨지도록 코드 작성
         $("p").click(function () {
-            console.log("클릭됨");
-        });
+            $(this).hide();
+        })
 
     </script>
 
