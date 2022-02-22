@@ -18,27 +18,18 @@
 </head>
 
 <body>
-    <!-- h1*2#head$>lorem1 -->
-    <h1 id="head1">
-        Lorem.
-    </h1>
-    <h1 id="head2">
-        Numquam.
-    </h1>
+    <!-- input*2[value=val$] -->
+    <input type="text" value="val1">
+    <input type="text" value="val2">
 
     <script>
-        $("#head1").mouseenter(function () {
-            console.log("첫 번째 제목 마우스 엔터");
-        });
-        $("#head1").mouseleave(function () {
-            console.log("첫 번째 제목 마우스 떠남");
+        $("input").focus(function () {
+            console.log("focus", this.value);
         });
 
-        $("#head2").hover(function () {
-            console.log("두 번째 제목 마우스 엔터!!!!!");
-        }, function () {
-            console.log("두 번째 제목 마우스 떠남@@@@@");
-        });
+        $("input").blur(function () {
+            console.log("blur", this.value);
+        })
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
