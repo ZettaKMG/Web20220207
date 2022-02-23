@@ -16,58 +16,34 @@
     <style>
     </style>
     <script>
-        $(document).ready(function () {
-            $("#head1").append($("<small>hi</small>"));
+        $(function () {
+            $("#head1").after("hello");
+            $("#head2").after("<p>hello javascript</p>");
+            $("#head3").after($("<h2>hi</h2>"));
 
-            let elem1 = $("<small>hello</small>");
-            $("#head2").append(elem1);
-            elem1.hide(5000);
-
-            // 새 jquery 객체를 만들어서
-            // #head3 요소에 append
-            // 새 jquery 객체는 span 요소, 콘텐트 "java"
-            let elem2 = $("<span></span>");
-            elem2.text("java");
-            $("#head3").append(elem2);
-
-            elem2.click(function () {
-                console.log($(this).text());
-            });
-        });
+            let elem1 = $("<h3 />");
+            elem1.text("hello jquery");
+            $("#head4").after(elem1);
+        })
     </script>
 </head>
 
 <body>
-    <!-- h1#head$*10>lorem1 -->
+    <!-- h1*5#head$>lorem1 -->
     <h1 id="head1">
         Lorem.
     </h1>
     <h1 id="head2">
-        Reprehenderit?
+        Eligendi.
     </h1>
     <h1 id="head3">
-        Adipisci.
+        Blanditiis.
     </h1>
     <h1 id="head4">
-        Perferendis.
+        Fugit!
     </h1>
     <h1 id="head5">
-        Modi.
-    </h1>
-    <h1 id="head6">
-        Ducimus.
-    </h1>
-    <h1 id="head7">
-        Accusantium.
-    </h1>
-    <h1 id="head8">
-        Quibusdam!
-    </h1>
-    <h1 id="head9">
-        Cum?
-    </h1>
-    <h1 id="head10">
-        Pariatur.
+        Aliquam?
     </h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
