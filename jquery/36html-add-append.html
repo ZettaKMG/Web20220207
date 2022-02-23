@@ -17,44 +17,58 @@
     </style>
     <script>
         $(document).ready(function () {
-            // append : 콘텐트 끝에 추가
-            $("#head1").append("hello");
+            $("#head1").append($("<small>hi</small>"));
 
-            // 코드 작성
-            // #head2 끝에 "java"
-            $("#head2").append("java");
+            let elem1 = $("<small>hello</small>");
+            $("#head2").append(elem1);
+            elem1.hide(5000);
 
-            // htmlString 추가
-            $("#head3").append("<small> java </small>");
+            // 새 jquery 객체를 만들어서
+            // #head3 요소에 append
+            // 새 jquery 객체는 span 요소, 콘텐트 "java"
+            let elem2 = $("<span>java</span>");
+            elem2.text("java");
+            $("#head3").append(elem2);
 
-            // #head4 끝에 span 요소 추가, span의 콘텐트는 hello
-            // 코드 작성
-            $("#head4").append("<span class='note' id='span1'>hello</span>");
+            elem2.click(function () {
+                console.log($(this).text());
+            });
         });
     </script>
 </head>
 
 <body>
-    <!-- h1#head1>lorem1 -->
+    <!-- h1#head$*10>lorem1 -->
     <h1 id="head1">
         Lorem.
     </h1>
-
-    <!-- h1#head2>lorem1 -->
     <h1 id="head2">
-        Lorem.
+        Reprehenderit?
     </h1>
-
-    <!-- h1#head3>lorem1 -->
     <h1 id="head3">
-        Lorem.
+        Adipisci.
     </h1>
-
-    <!-- h1#head4>lorem1 -->
     <h1 id="head4">
-        Lorem.
+        Perferendis.
     </h1>
-
+    <h1 id="head5">
+        Modi.
+    </h1>
+    <h1 id="head6">
+        Ducimus.
+    </h1>
+    <h1 id="head7">
+        Accusantium.
+    </h1>
+    <h1 id="head8">
+        Quibusdam!
+    </h1>
+    <h1 id="head9">
+        Cum?
+    </h1>
+    <h1 id="head10">
+        Pariatur.
+    </h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
